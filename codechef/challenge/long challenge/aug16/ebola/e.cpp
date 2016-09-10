@@ -26,7 +26,8 @@ int main()
         adj[v][totaladj[v]++]=u;
         //adj[u][v]=1;
         //adj[v][u]=1;
-    }
+		    
+	}
     int vac[505]={0},aff[10001]={0},vdone[100001]={0};
     aff[s]=1;
     int queue[100001]={0};
@@ -66,8 +67,7 @@ int main()
                 }
                 if(sum>maxsum) maxsum=sum,pos=j;
                 */
-                //if(w[j]>max) max=w[j],pos=j;
-                //else 
+                //
                 if(w[j]>=max)
                 {
                     if(timest[pos]>=timest[j]) max=w[j],pos=j;
